@@ -11,8 +11,9 @@ x-base_service: &base_service
       resources:
         reservations:
           devices:
-          - capabilities:
-            - gpu
+            - driver: vfio-pci
+              count: all
+              capabilities: [gpu]
 volumes:
   data:
   output:
