@@ -11,7 +11,7 @@ x-base_service: &base_service
       resources:
         reservations:
           devices:
-              - driver: nvidia
+              - driver: Nivida1050
                 device_ids: ['0']
                 capabilities: [gpu]
 
